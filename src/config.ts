@@ -1,12 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBibyEDEYdxt6FdaF9gQQmDFNKBK4z4uE8",
-  authDomain: "chess-53d94.firebaseapp.com",
-  databaseURL: "https://chess-53d94-default-rtdb.firebaseio.com",
-  projectId: "chess-53d94",
-  storageBucket: "chess-53d94.appspot.com",
-  messagingSenderId: "467088854517",
-  appId: "1:467088854517:web:3f992d55e405755f0064bc",
-  measurementId: "G-1T10V02DHT"
+  apiKey: "AIzaSyA3ta10R9eMTQOKuxT4NwGPUZb7R4KsCu0",
+  authDomain: "chess-v2-db8b4.firebaseapp.com",
+  databaseURL: "https://chess-v2-db8b4-default-rtdb.firebaseio.com",
+  projectId: "chess-v2-db8b4",
+  storageBucket: "chess-v2-db8b4.appspot.com",
+  messagingSenderId: "759799093092",
+  appId: "1:759799093092:web:8fd5e63c8fe0edde520c71",
+  measurementId: "G-KKE58V3ML4"
 };
-
 export { firebaseConfig };

@@ -107,6 +107,7 @@ class FirebaseClient {
     });
   }
 
+  
   public listenForGameUpdates(roomId: string, callback: (data: any) => void) {
     const roomRef = ref(this._db, `rooms/${roomId}`);
     onValue(roomRef, (snapshot) => {

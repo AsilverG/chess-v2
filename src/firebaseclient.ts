@@ -1,8 +1,8 @@
 import { firebaseConfig } from "./config.js";
 //@ts-ignore Import module
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";//@ts-ignore Import
-import { getDatabase, ref, update, onValue, set, get, onDisconnect, remove } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+//@ts-ignore Import
+import { getDatabase, ref, update, onValue, set, get, onDisconnect, remove } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
 class FirebaseClient {
   private static _instance: FirebaseClient;
@@ -107,7 +107,6 @@ class FirebaseClient {
     });
   }
 
-  
   public listenForGameUpdates(roomId: string, callback: (data: any) => void) {
     const roomRef = ref(this._db, `rooms/${roomId}`);
     onValue(roomRef, (snapshot) => {
